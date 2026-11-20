@@ -6,4 +6,4 @@ hide-mode='none'
 icon-size=40
 zoom-enabled=false
 show-dock-item=false
-dock-items=['browser.dockitem', 'files.dockitem', 'terminal.dockitem', 'settings.dockitem']
+dock-items=['browser.dockitem', 'files.dockitem', 'software.dockitem', 'terminal.dockitem', 'settings.dockitem']

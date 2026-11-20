@@ -103,6 +103,7 @@ mk_item() {
 }
 mk_item browser firefox org.mozilla.firefox
 mk_item files thunar org.xfce.Thunar org.xfce.thunar
+mk_item software org.gnome.Software
 mk_item terminal xfce4-terminal org.xfce.terminal org.xfce.Terminal
 mk_item settings xfce-settings-manager org.xfce.settings.manager
 
