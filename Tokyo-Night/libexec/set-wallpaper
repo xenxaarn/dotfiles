@@ -1,0 +1,14 @@
+#!/bin/sh
+# Runs once per user at login: points every xfdesktop monitor at the Ella wallpaper.
+marker="${XDG_CONFIG_HOME:-$HOME/.config}/ella/wallpaper-v1"
+[ -e "$marker" ] && exit 0
+wp=/usr/share/backgrounds/ella/forest.png
+props=
+for _ in $(seq 40); do
+  props=$(xfconf-query -c xfce4-desktop -l 2>/dev/null | grep '/last-image$' || true)
+  [ -n "$props" ] && break
+  sleep 0.5
+done
+[ -n "$props" ] || exit 0
+for p in $props; do xfconf-query -c xfce4-desktop -p "$p" -s "$wp"; done
+mkdir -p "$(dirname "$marker")" && touch "$marker"
