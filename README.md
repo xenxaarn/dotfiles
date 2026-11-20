@@ -1,4 +1,4 @@
-# [Tokyo Night](https://github.com/rejarevaldy/dotfiles/tree/master/Tokyo-Night) for XFCE
+# Tokyo Night for XFCE
 
 Fork of rejarevaldy's Tokyo Night dotfiles, adapted for XFCE and for baking into an immutable image
 ([Ella](https://github.com/xenxaarn/ella)).
